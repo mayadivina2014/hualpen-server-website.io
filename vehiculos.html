@@ -4,46 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vehículos Permitidos para Robar</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Vincular el archivo de estilos -->
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" href="images/logo.png">
+      <link rel="stylesheet" href="styles.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      margin: 0;
-      padding: 0;
-    }
-    h1 {
-      background-color: #4CAF50;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+    /* Ajustes específicos para esta página */
     #vehiculos-lista {
-      margin: 20px;
+      max-width: 800px;
+      margin: 0 auto; /* Centrar el contenido */
+      background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      overflow-y: auto;
+      max-height: 90vh;
     }
-    .gama {
-      margin-bottom: 30px;
+
+    h1 {
+      margin-top: 0;
+      padding: 20px 0;
+      background-color: rgba(0, 51, 102, 0.9); /* Azul oscuro semitransparente */
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
     }
+
     .gama h3 {
       background-color: #4CAF50;
       color: white;
       padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
     }
+
     ul {
       list-style-type: none;
       padding: 0;
     }
+
     li {
-      background-color: #fff;
-      padding: 8px;
+      background-color: #444;
+      padding: 10px;
       margin: 5px 0;
       border-radius: 5px;
-      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .gama p {
+      color: #ff4c4c;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    /* Barra de desplazamiento personalizada */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #4CAF50;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.6);
     }
   </style>
 </head>
 <body>
-  <h1>Permitidos para Robar</h1>
   <div id="vehiculos-lista">
+    <h1>Permitidos para Robar</h1>
     <!-- Gama Baja -->
     <div class="gama">
       <h3>Baja Gama</h3>
@@ -52,7 +82,6 @@
         <li>Overland Apache (1995)</li>
         <li>Falcon Prime Eques (2003)</li>
         <li>Chevlon Camion (2002)</li>
-        <li>Overland Apache (1995)</li>
         <li>Chevlon Captain (2006)</li>
         <li>Falcon Traveller (2003)</li>
         <li>Vellfire Evertt (1995)</li>

@@ -1,44 +1,73 @@
-/* Estilo para el banner */
+/* Estilo del encabezado */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(0, 51, 102, 0.9); /* Azul oscuro semitransparente */
+  color: white;
+  border-bottom: 2px solid #00cc66; /* Línea decorativa */
+}
+
+.header .logo {
+  width: 100px; /* Tamaño del logo */
+  height: auto;
+  margin-right: 20px; /* Espaciado entre logo y texto */
+}
+
+.header .header-text {
+  text-align: left;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #ccc; /* Texto secundario */
+}
+
+/* Banner principal */
 .banner img {
-    width: 60%;  /* Reducir el tamaño del banner al 60% del ancho */
-    height: auto; /* Mantener la proporción de la imagen */
-    display: block; /* Eliminar márgenes */
-    margin: 0 auto; /* Centrar la imagen */
-  }
-  
-  /* Estilos para la página */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: linear-gradient(to bottom, #003366, #00cc66, #ff0000); /* Fondo con gradiente de azul, verde y rojo */
-    color: white;  /* Texto blanco */
-  }
-  
-  h1 {
-    margin-top: 20px;
-    color: white; /* Color de texto blanco */
-  }
-  
-  /* Estilo para los enlaces */
-  .botones {
-    margin-top: 20px;
-  }
-  
-  .botones a {
-    background-color: #4CAF50;  /* Color verde */
-    color: white;
-    padding: 15px 32px;
-    text-decoration: none;  /* Quita el subrayado */
-    font-size: 16px;
-    cursor: pointer;
-    margin: 10px;
-    border-radius: 5px;
-    display: inline-block;  /* Hace que los enlaces se comporten como botones */
-  }
-  
-  .botones a:hover {
-    background-color: #45a049;  /* Color más oscuro cuando se pasa el ratón */
-  }
-  
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(to bottom, #003366, #00cc66, #ff0000); /* Gradiente de fondo */
+  color: white;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.botones {
+  margin-top: 20px;
+}
+
+.botones a {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.botones a:hover {
+  background-color: #45a049;
+}

@@ -13,17 +13,19 @@
     <script>
         grecaptcha.ready(function() {
             grecaptcha.execute('6LfhlMMqAAAAAIhUG3-_JNCIhi-C7K5AnMtEuctA', {action: 'homepage'}).then(function(token) {
-                // Aquí podrías enviar el token al servidor para su verificación si es necesario.
                 console.log('Token generado: ', token);
             });
         });
     </script>
 </head>
 <body>
-    <!-- Encabezado -->
-    <header>
-        <h1>Hualpén Server Website</h1>
-        <p>Bienvenidos a la página oficial del servidor Hualpén City RP.</p>
+    <!-- Encabezado con logo -->
+    <header class="header">
+        <img src="images/logo.png" alt="Logo Hualpén" class="logo">
+        <div class="header-text">
+            <h1>Hualpén Server Website</h1>
+            <p>Bienvenidos a la página oficial del servidor Hualpén City RP.</p>
+        </div>
     </header>
 
     <!-- Banner principal -->
@@ -43,7 +45,7 @@
 
     <!-- Versión del sitio -->
     <footer>
-        <p class="version">Versión: V.2.0.1</p>
+        <p class="version">Versión: V.2.1.2</p>
     </footer>
 </body>
 </html>
