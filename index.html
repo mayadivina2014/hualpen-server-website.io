@@ -7,6 +7,9 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Cargar el script de Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <!-- Encabezado -->
@@ -30,9 +33,26 @@
         <a href="normas.html">Normativa General</a>
     </div>
 
+    <!-- Formulario de contacto (con reCAPTCHA) -->
+    <div class="contacto">
+        <h2>Contacto</h2>
+        <form action="your-backend-url" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <!-- Widget de Google reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="6LfhlMMqAAAAAIhUG3-_JNCIhi-C7K5AnMtEuctA"></div><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
     <!-- Versión del sitio -->
     <footer>
-        <p class="version">Versión: V.1.1.2</p>
+        <p class="version">Versión: V.2.0.1</p>
     </footer>
 </body>
 </html>
